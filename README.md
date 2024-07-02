@@ -16,7 +16,8 @@ Webdriver dependencies:
 
 Interface: is group of related methods with empty bodies. Its class responsibility to implement methods declared in the interface. When class agreed to implement interface, they must need to provide implementation/bodies to all defined methods in interface.
 
-'Selenium WebDriver Interface': https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebDriver.html
+# Selenium WebDriver Interface: 
+https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebDriver.html
 
 Create an object of clss to access the methods:
 1) ChromeDriver driver = new ChromeDriver();
