@@ -15,7 +15,19 @@ public class SeleniumIntro {
 /*		ChromeDriver driver = new ChromeDriver();
 		driver.resetInputState();
 */		
+		
+		
+		// Chromedriver.exe -> Chrome browser Selenium Manager
+		// step to invoke chrome driver //
+		//System.out.println("webdriver.chrome.driver", "D:/Automation/Selenium BDD/Drivers/chromedriver-win64");
+		//Webdriver.chrome.driver -> value of path
 		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/");
+		//Lock the output 
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		driver.close();
+		//driver.quit();
 	}
 
 }

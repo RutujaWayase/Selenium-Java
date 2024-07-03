@@ -24,3 +24,7 @@ driver object -> has access to all methods of Chrome Driver
 
 2) WebDriver driver = new ChromeDriver();
 driver object -> has access to the methods of Chrome Driver which are defined in web driver interface
+
+ChromeDriver: https://getwebdriver.com/chromedriver#stable
+
+Difference between driver.close & driver.quit: driver.close: is associated only with current window. driver.quit: is associate will all the windows
