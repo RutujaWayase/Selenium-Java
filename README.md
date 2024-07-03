@@ -25,10 +25,12 @@ driver object -> has access to all methods of Chrome Driver
 
 2) WebDriver driver = new ChromeDriver();
 driver object -> has access to the methods of Chrome Driver which are defined in web driver interface
-<<<<<<< HEAD
+
 
 ChromeDriver: https://getwebdriver.com/chromedriver#stable
+
 EdgeDriver: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver?form=MA13LH 
+
 GekoDriver(Firefox): https://github.com/mozilla/geckodriver/releases
 
 
