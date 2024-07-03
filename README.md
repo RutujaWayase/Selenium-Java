@@ -37,4 +37,5 @@ GekoDriver(Firefox): https://github.com/mozilla/geckodriver/releases
 # Difference between driver.close & driver.quit: 
 driver.close: is associated only with current window. driver.quit: is associate will all the windows
 
-
+array.length method used for normal/single array
+array.size method used for ArrayList, eg: ArrayList<String>
