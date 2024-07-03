@@ -16,7 +16,8 @@ Webdriver dependencies:
 
 Interface: is group of related methods with empty bodies. Its class responsibility to implement methods declared in the interface. When class agreed to implement interface, they must need to provide implementation/bodies to all defined methods in interface.
 
-'Selenium WebDriver Interface': https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebDriver.html
+# Selenium WebDriver Interface: 
+https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebDriver.html
 
 Create an object of clss to access the methods:
 1) ChromeDriver driver = new ChromeDriver();
@@ -24,7 +25,10 @@ driver object -> has access to all methods of Chrome Driver
 
 2) WebDriver driver = new ChromeDriver();
 driver object -> has access to the methods of Chrome Driver which are defined in web driver interface
+<<<<<<< HEAD
 
 ChromeDriver: https://getwebdriver.com/chromedriver#stable
 
 Difference between driver.close & driver.quit: driver.close: is associated only with current window. driver.quit: is associate will all the windows
+=======
+>>>>>>> da6a822032887898a72069071e2076a66e7465ca
