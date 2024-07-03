@@ -29,6 +29,7 @@ driver object -> has access to the methods of Chrome Driver which are defined in
 
 ChromeDriver: https://getwebdriver.com/chromedriver#stable
 
-Difference between driver.close & driver.quit: driver.close: is associated only with current window. driver.quit: is associate will all the windows
-=======
->>>>>>> da6a822032887898a72069071e2076a66e7465ca
+# Difference between driver.close & driver.quit: 
+driver.close: is associated only with current window. driver.quit: is associate will all the windows
+
+
