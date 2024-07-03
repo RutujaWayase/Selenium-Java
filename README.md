@@ -28,6 +28,9 @@ driver object -> has access to the methods of Chrome Driver which are defined in
 <<<<<<< HEAD
 
 ChromeDriver: https://getwebdriver.com/chromedriver#stable
+EdgeDriver: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver?form=MA13LH 
+GekoDriver(Firefox): https://github.com/mozilla/geckodriver/releases
+
 
 # Difference between driver.close & driver.quit: 
 driver.close: is associated only with current window. driver.quit: is associate will all the windows
