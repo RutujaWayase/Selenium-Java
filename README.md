@@ -39,3 +39,10 @@ driver.close: is associated only with current window. driver.quit: is associate 
 
 array.length method used for normal/single array
 array.size method used for ArrayList, eg: ArrayList<String>
+
+# link text has tag anchor tag 'a'.
+We always prefer linkText() over partialLinkText().
+partialLinkText() is prefered when we hve a single link on the page.
+
+
+

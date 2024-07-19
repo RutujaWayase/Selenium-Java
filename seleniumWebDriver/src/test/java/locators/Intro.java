@@ -10,7 +10,8 @@ public class Intro {
 		//ChromeDriver driver = new ChromeDriver();
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://demo.opencart.com/");
+		//driver.get("https://demo.opencart.com/");
+		driver.get("https://demo-opencart.com/");
 		//driver.get("https://google.com");
 		String act_title=driver.getTitle();
 		
