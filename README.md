@@ -57,23 +57,29 @@ findElement() - single webelement
 
 findElements() - multiple webelement
 
-Scenario 1: Locator matching with single webelement
-findElement(loc) -> single webelement; Return type: WebElement
-findElements(loc) -> single webelement; Return type: List<WebElement>
+Scenario 1: Locator matching with single webelement.
 
-Scenario 2: Locator matching with multiple webelement
-findElement(loc) -> single webelement; Return type: WebElement
-findElements(loc) -> multiple webelement; Return type: List<WebElement>
+•	findElement(loc) -> single webelement; Return type: WebElement
+•	findElements(loc) -> single webelement; Return type: List<WebElement>
+
+Scenario 2: Locator matching with multiple webelement.
+
+•	findElement(loc) -> single webelement; Return type: WebElement
+•	findElements(loc) -> multiple webelement; Return type: List<WebElement>
 
 Scenario 3: Locator is not matching with any element/s.
-findElement(loc) -> No Such Element Exception.
-findElements(loc) -> will not throw any exception. Returns 0. // this will create empty list collection if there are no elements.
+
+•	findElement(loc) -> No Such Element Exception.
+•	findElements(loc) -> will not throw any exception. Returns 0. // this will create empty list collection if there are no elements.
 
 # CSS Selector
  
  tag id -> tag#id
+ 
  tag class -> tag#class
+ 
  tag attribute -> tag[attribute="value"]
+ 
  tag class attribute -> tag.class[attribute="value"]
  
 
