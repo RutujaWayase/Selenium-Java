@@ -54,6 +54,7 @@ List Element allows duplicates. Set doesn't allow diplicates.
 •	To find total elements in list use size() method.
 
 findElement() - single webelement
+
 findElements() - multiple webelement
 
 Scenario 1: Locator matching with single webelement
