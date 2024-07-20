@@ -45,10 +45,29 @@ We always prefer linkText() over partialLinkText().
 partialLinkText() is prefered when we hve a single link on the page.
 
 •	TagName & Class: used for group of webelements
+
 •	findElement(): returns a particlar/single webelement
+
 •	findElements(): returns a group/multiple webelement => Variable type used List or Set. Return Type: List.
 List Element allows duplicates. Set doesn't allow diplicates.
+
 •	To find total elements in list use size() method.
+
+findElement() - single webelement
+findElements() - multiple webelement
+
+Scenario 1: Locator matching with single webelement
+findElement(loc) -> single webelement; Return type: WebElement
+findElements(loc) -> single webelement; Return type: List<WebElement>
+
+Scenario 2: Locator matching with multiple webelement
+findElement(loc) -> single webelement; Return type: WebElement
+findElements(loc) -> multiple webelement; Return type: List<WebElement>
+
+Scenario 3: Locator is not matching with any element/s.
+findElement(loc) -> No Such Element Exception.
+findElements(loc) -> will not throw any exception. Returns 0. // this will create empty list collection if thee are no elements.
+
 
 
 
