@@ -66,7 +66,15 @@ findElements(loc) -> multiple webelement; Return type: List<WebElement>
 
 Scenario 3: Locator is not matching with any element/s.
 findElement(loc) -> No Such Element Exception.
-findElements(loc) -> will not throw any exception. Returns 0. // this will create empty list collection if thee are no elements.
+findElements(loc) -> will not throw any exception. Returns 0. // this will create empty list collection if there are no elements.
+
+# CSS Selector
+ 
+ tag id -> tag#id
+ tag class -> tag#class
+ tag attribute -> tag[attribute="value"]
+ tag class attribute -> tag.class[attribute="value"]
+ 
 
 
 
