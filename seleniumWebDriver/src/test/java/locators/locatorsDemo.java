@@ -1,7 +1,10 @@
 package locators;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class locatorsDemo {
@@ -22,7 +25,20 @@ public class locatorsDemo {
 		
 		//linktext & partiallinkText
 		//driver.findElement(By.linkText("Tablets")).click();
-		driver.findElement(By.partialLinkText("Tablet")).click();
+		driver.findElement(By.partialLinkText("Table")).click();
+		
+		//classname
+		//for multiple elements
+		List<WebElement> headerLinks = driver.findElements(By.className("list-inline-item"));
+		//headerLinks.size();
+		System.out.println("total number of header links: "+ headerLinks.size()); 
+		
+		//tagname
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+		System.out.println("Total number of links: "+links.size());
+		
+		List<WebElement> images = driver.findElements(By.tagName("img"));
+		System.out.println("Total number of images: "+images.size());
 		
 	}
 

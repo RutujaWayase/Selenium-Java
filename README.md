@@ -44,5 +44,15 @@ array.size method used for ArrayList, eg: ArrayList<String>
 We always prefer linkText() over partialLinkText().
 partialLinkText() is prefered when we hve a single link on the page.
 
+•	TagName & Class: used for group of webelements
+•	findElement(): returns a particlar/single webelement
+•	findElements(): returns a group/multiple webelement => Variable type used List or Set. Return Type: List.
+List Element allows duplicates. Set doesn't allow diplicates.
+•	To find total elements in list use size() method.
+
+
+
+
+
 
 
