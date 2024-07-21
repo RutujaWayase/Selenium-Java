@@ -105,7 +105,30 @@ Syntax:
 •	//*[@attribute=’value’]
 Ex: //*[@title='MacBook'] or //img[@title='MacBook']
 
- 
+XPath with single attribute => Ex: //input[@placeholder='Search']
+
+XPath with multiple attribute => Ex: //input[@name='search'][@placeholder='Search']
+
+link text can be inner text but all inner text can't be link text
+
+<a href="https://xyz.com">Click Me</a> =>
+linktext=yes; inner text=yes
+
+<div>welcome</div>
+linktext=no; inner text=yes
+
+xpath with contains() => Ex: //input[contains(@placeholder,'Sea')]
+
+handling dynamic attributes => 
+• //*[@id='start' or @id='stop']
+• //*[contains(@id,'st')]
+• //*[starts-with(@id,'st')]
+
+Chained XPath => Combination of Absolute & Relative XPath. Ex: //div[@id='logo']/a/img
+
+
+
+
 
 
 
