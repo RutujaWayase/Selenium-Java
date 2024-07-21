@@ -111,7 +111,7 @@ XPath with multiple attribute => Ex: //input[@name='search'][@placeholder='Searc
 
 link text can be inner text but all inner text can't be link text
 
-<a href="https://xyz.com">Click Me</a> =>
+//<a href="https://xyz.com">Click Me</a> =>
 linktext=yes; inner text=yes
 
 <div>welcome</div>
@@ -126,6 +126,16 @@ handling dynamic attributes =>
 
 Chained XPath => Combination of Absolute & Relative XPath. Ex: //div[@id='logo']/a/img
 
+Locating a parent element:
+Syntax:
+1)	//<knownXpath>/parent::*
+2)	//<knownXpath>/parent::element
+3)	//<knownXpath>/..
+
+Ex:
+1)	//input[@id=’txtUsername’]/parent::form
+2)	//input[@id=’txtUsername’]/parent::*
+3)	//input[@id=’txtUsername’]/..
 
 
 
