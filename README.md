@@ -81,6 +81,30 @@ Scenario 3: Locator is not matching with any element/s.
  tag attribute -> tag[attribute="value"]
  
  tag class attribute -> tag.class[attribute="value"]
+
+# XPath 
+XPath is an address of the element and is based on DOM - Document Object Model
+
+Types of XPath:
+1) Absolute XPath(Full xpath) => Ex: /html/body/header/div/div/div[2]/div/input
+2) Relative XPath(partial xpath) => Ex: //*[@id="search"]/input
+
+Differences between Absolute & Relative XPaths?
+1)	Absolute XPath starts with / -> represents root node.
+Relative XPath starts with //
+
+2)	Absolute XPath does not use attributes.
+Relative XPath works with attribute.
+
+3)	Absolute XPath traverse through each node till it find element.
+Relative XPath directly jumps & finds the element by using attribute.
+
+Relative XPath:
+Syntax:
+•	//tagname[@attribute=’value’]
+•	//*[@attribute=’value’]
+Ex: //*[@title='MacBook'] or //img[@title='MacBook']
+
  
 
 
