@@ -1,5 +1,14 @@
 package oopsJava;
 
+
+/*
+Method Overloading: If a class has multiple methods having same name but different in paramters is known as Method Overloading.
+Different ways to overload the method:
+	1) By Changing number of arguments.
+    2) By changing the data type
+*/
+
+
 //1) Changing no. of arguments
 /*
 class Adder{
