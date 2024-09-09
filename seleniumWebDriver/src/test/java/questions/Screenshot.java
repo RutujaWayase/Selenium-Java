@@ -1,3 +1,4 @@
+/*
 package questions;
 
 import java.awt.Dimension;
@@ -19,3 +20,5 @@ public class Screenshot {
 	}
 
 }
+ 
+*/
