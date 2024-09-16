@@ -28,6 +28,12 @@ public class SelectDropDown {
 		List<WebElement>options = drpCountry.getOptions();
 		System.out.println("Number of options in a drop drown: "+options.size());
 		
+		
+		//printing the options
+		for(int i=0; i<options.size();i++) {
+			System.out.println(options.get(i).getText());
+		}
+		
 	}
 
 }
