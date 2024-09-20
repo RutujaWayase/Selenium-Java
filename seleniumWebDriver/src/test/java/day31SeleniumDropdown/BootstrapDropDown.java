@@ -16,7 +16,7 @@ public class BootstrapDropDown {
 		driver.findElement(By.xpath("//button[contains(@class,'multiselect')]")).click(); //opens drop drown options
 		
 		//select single option
-		driver.findElement(By.xpath("//input[@value='Java']"));
+		driver.findElement(By.xpath("//input[@value='Java']")).click();
 		
 		
 	}
