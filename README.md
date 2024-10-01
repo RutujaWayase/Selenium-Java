@@ -139,6 +139,10 @@ Ex:
 3)	//input[@id=’txtUsername’]/..
 
 
+Revert git changes: git revert "commit id"
+Eg: git revert 36e4b6e6eaf63ffd2cd2d99c3636e96b3bb7b9eb
+
+
 
 
 
