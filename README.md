@@ -142,6 +142,44 @@ Ex:
 Revert git changes: git revert "commit id"
 Eg: git revert 36e4b6e6eaf63ffd2cd2d99c3636e96b3bb7b9eb
 
+## Java
+# Collection Framework
+![alt text](image.png)
+java.util package contains all the classes and interfaces for the Collection framework.
+
+• ArrayList: ArrayList class implements List interface. ArrayList class maintains the insertion order and is non-synchronized. The elements stored in the ArrayList class can be randomly accessed
+
+
+• LinkedList: LinkedList implements Collection interface. Uses doubly linked list internally to store duplicate elements. It maintains the insertion order and is not synchronized. In LinkedList, the manipulation is fast because no shifting is required. 
+
+• Vector: uses Dynamic array to store data elements. It is similar to ArrayList, it is synchronized & contain's many methods that are not part of collection framework.
+
+• Stack: is the subclass of Vector. It implements 'last-in-first-out' data stucture. It contatins methods of vector and also provides methods like boolean push(), boolean peek(), boolean push(object o).
+
+• Queue Interface: it maintaince 'first-in-first-out' order. Also defined as ordered list. There are various classes like PriorityQueue, Deque & ArrayDeque.
+Queue<String> q1 = new PriorityQueue();  
+Queue<String> q2 = new ArrayDeque();  
+
+• Priority Queue: implements Queue interface. It holds elements/objects as per priorities. PriorityQueue doesn't allow null vale.
+
+• Deque interface: it extends Queue interface. We can remove & add the elements from both the side. Deque stands for double-ended queue which emables us to perform operations on both the ends.
+Deque d = new ArrayDeque();
+
+• ArrayDeque: ArrayDeque class implements Deque interface. We can add/delete the elements from both the ends. It is faster than ArrayList & Stack & has no capacity restrictions.
+
+• Set Interface: present in java.util package, it extends Collection interface. It represents unordered set of elements which doesn't allow us to store duplicate items. Set is implemented by HashSet, linkedHashSet & TreeSet.
+Set<data-type> s1 = new HashSet<data-type>();  
+Set<data-type> s2 = new LinkedHashSet<data-type>();  
+Set<data-type> s3 = new TreeSet<data-type>();  
+
+• HashSet: HashSet class implements Set Interface. It represents collection that uses hash table for storage. Hashing is used to store elements in HashSet. It contains unique items.
+
+• LinkedHashSet: LinkedHashSet calss represnts LinkedList implementation of Set Interface. It extends HashSet class & implements Set interface. It contains unique elements. It maintains the insertion order & permits null elements.
+
+• SortedSet Interface: is alternate of Set interface, provides total ordering on its elements. The elements of SortedSet are arranged in increasing/ascending oreder. 
+SortedSet<data-type> set = new TreeSet();
+
+• TreeSet: TreeSet class implements the Set interface that uses tree for storage. Similar to HashSet, TreeSet contains unique elements. Access & retrieval time of TreeSet is quite fast. Elements are stored in ascending oreder.
 
 
 
