@@ -144,8 +144,20 @@ Eg: git revert 36e4b6e6eaf63ffd2cd2d99c3636e96b3bb7b9eb
 
 ## Java
 # Collection Framework
+
 ![alt text](image.png)
 java.util package contains all the classes and interfaces for the Collection framework.
+
+• Iterable Interface: root interface for all the collection classes.
+Iterator<T> iterator()  
+
+• Collection Interface: Collection interface builds the foundation on which the collection framework depends. Methods of Collection interface are Boolean add ( Object obj), Boolean addAll ( Collection c), void clear(), etc. which are implemented by all the subclasses of Collection interface.
+
+• List Interface: List interface is the child interface of Collection interface. It inhibits a list type data structure in which we can store the ordered collection of objects. It can have duplicate values. List interface is implemented by the classes ArrayList, LinkedList, Vector, and Stack.
+List <data-type> list1= new ArrayList();  
+List <data-type> list2 = new LinkedList();  
+List <data-type> list3 = new Vector();  
+List <data-type> list4 = new Stack(); 
 
 • ArrayList: ArrayList class implements List interface. ArrayList class maintains the insertion order and is non-synchronized. The elements stored in the ArrayList class can be randomly accessed
 
