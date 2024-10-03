@@ -1,9 +1,11 @@
 package day31SeleniumDropdown;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BootstrapDropDown {
@@ -15,8 +17,17 @@ public class BootstrapDropDown {
 		
 		driver.findElement(By.xpath("//button[contains(@class,'multiselect')]")).click(); //opens drop drown options
 		
-		//select single option
+		//1) Select single option
 		driver.findElement(By.xpath("//input[@value='Java']")).click();
+		
+		//2) Capture all the options and find out the size
+		List<WebElement> options = driver.findElements(By.xpath("//ul[contains(@class, 'multiselect')]//label"));
+		System.out.println("Number of options: "+options.size());
+		
+		//3) Printing options from dropdown
+		for(WebElement op:options) {
+			System.out.println(op.getText());
+		}
 		
 		
 	}
