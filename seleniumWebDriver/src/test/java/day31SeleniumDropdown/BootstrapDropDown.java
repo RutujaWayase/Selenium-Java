@@ -25,8 +25,16 @@ public class BootstrapDropDown {
 		System.out.println("Number of options: "+options.size());
 		
 		//3) Printing options from dropdown
+	/*    for(WebElement op:options) {
+			System.out.println(op.getText()); //used when to get index
+		}
+	*/	
+		//4) Select multiple options //using enhanced for loop
 		for(WebElement op:options) {
-			System.out.println(op.getText());
+			String option = op.getText();
+			if(option.equals("Java") || option.equals("Python") || option.equals("MySQL")) {
+				op.click();
+			}
 		}
 		
 		
