@@ -138,6 +138,15 @@ Ex:
 2)	//input[@id=’txtUsername’]/parent::*
 3)	//input[@id=’txtUsername’]/..
 
+•	Dropdown box:
+1.	Select dropdown
+2.	Bootstrap dropdown
+3.	Hidden dropdown
+
+•	Web Tables:
+1.	Static Web Table
+2.	Dynamic Web table
+3.	Table with Pagination
 
 Revert git changes: git revert "commit id"
 Eg: git revert 36e4b6e6eaf63ffd2cd2d99c3636e96b3bb7b9eb
@@ -160,6 +169,7 @@ List <data-type> list3 = new Vector();
 List <data-type> list4 = new Stack(); 
 
 • ArrayList: ArrayList class implements List interface. ArrayList class maintains the insertion order and is non-synchronized. The elements stored in the ArrayList class can be randomly accessed
+![alt text](image-1.png)
 
 
 • LinkedList: LinkedList implements Collection interface. Uses doubly linked list internally to store duplicate elements. It maintains the insertion order and is not synchronized. In LinkedList, the manipulation is fast because no shifting is required. 
@@ -192,6 +202,8 @@ Set<data-type> s3 = new TreeSet<data-type>();
 SortedSet<data-type> set = new TreeSet();
 
 • TreeSet: TreeSet class implements the Set interface that uses tree for storage. Similar to HashSet, TreeSet contains unique elements. Access & retrieval time of TreeSet is quite fast. Elements are stored in ascending oreder.
+
+
 
 
 
