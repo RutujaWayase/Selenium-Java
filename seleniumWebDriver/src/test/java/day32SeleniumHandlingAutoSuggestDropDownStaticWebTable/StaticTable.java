@@ -1,4 +1,4 @@
-package day33SeleniumHandlingAutoSuggestDropDownStaticWebTable;
+package day32SeleniumHandlingAutoSuggestDropDownStaticWebTable;
 
 import java.time.Duration;
 
