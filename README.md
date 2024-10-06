@@ -148,6 +148,49 @@ Ex:
 2.	Dynamic Web table
 3.	Table with Pagination
 
+•	Remote Webdriver implements 3 interfaces:
+1. WebDriver interface
+2. JavaScript interface
+3. TakesScreenshot interface
+![alt text](image-2.png)
+
+JavaScript methods: exexuteScript() - used in place of sendKeys(), click(); element intercepted exception.
+
+1. WebDriver driver = new ChromeDriver();  //upcasting
+JavascriptExecutor js = (JavascriptExecutor)driver;
+
+2. ChromeDriver driver = new ChromeDriver();
+JavascriptExecutor js = driver; // no need of typecasting we can directly assign it to driver
+
+Using get & setAttribute
+Ex:
+		js.executeScript("arguments[0].setAttribute('value','John')", inputbox);
+
+Scrolling:
+1. scroll down page by pixel number: js.executeScript("window.scrollBy(0,1500)", "")
+2. scroll the page till element is visible: js.executeScript("arguments[0].scrollIntoView();", ele);
+3. scroll page till end of the page: js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+4. scrolling up to initial position: js.executeScript("window.scrollBy(0, -document.body.scrollHeight)");
+ 
+Zoom In/Out:
+Ex:
+JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("document.body.style.zoom='50%'");
+
+Upload Files:
+1. Single file
+driver.findElement(By.xpath("//input[@id='filesToUpload']")).sendKeys("D:\\Automation\\Selenium BDD\\Selenium-Java\\Test1.txt");
+		
+		if(driver.findElement(By.xpath("//ul[@id='fileList']//li")).getText().equals("Test1.txt")) {
+			System.out.println("File is successfully uploaded");
+		}
+2. Multiple file
+		String file1 = "D:\\Automation\\Selenium BDD\\Selenium-Java\\Test1.txt";
+		String file2 = "D:\\Automation\\Selenium BDD\\Selenium-Java\\Test2.txt";
+		
+		driver.findElement(By.xpath("//input[@id='filesToUpload']")).sendKeys(file1+"\n"+file2);
+        int noOfFilesUploaded = driver.findElements(By.xpath("//ul[@id='fileList']//li")).size();
+
 Revert git changes: git revert "commit id"
 Eg: git revert 36e4b6e6eaf63ffd2cd2d99c3636e96b3bb7b9eb
 
