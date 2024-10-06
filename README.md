@@ -174,17 +174,20 @@ Scrolling:
  
 Zoom In/Out:
 Ex:
+
 JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("document.body.style.zoom='50%'");
 
 Upload Files:
 1. Single file
+
 driver.findElement(By.xpath("//input[@id='filesToUpload']")).sendKeys("D:\\Automation\\Selenium BDD\\Selenium-Java\\Test1.txt");
 		
 		if(driver.findElement(By.xpath("//ul[@id='fileList']//li")).getText().equals("Test1.txt")) {
 			System.out.println("File is successfully uploaded");
 		}
 2. Multiple file
+
 		String file1 = "D:\\Automation\\Selenium BDD\\Selenium-Java\\Test1.txt";
 		String file2 = "D:\\Automation\\Selenium BDD\\Selenium-Java\\Test2.txt";
 		
