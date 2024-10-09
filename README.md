@@ -197,6 +197,30 @@ driver.findElement(By.xpath("//input[@id='filesToUpload']")).sendKeys("D:\\Autom
 Revert git changes: git revert "commit id"
 Eg: git revert 36e4b6e6eaf63ffd2cd2d99c3636e96b3bb7b9eb
 
+Headless mode (without UI): ChomeOptions class
+
+# ChromeOptions:
+1) Headless Testing:
+
+ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless=new");  // setting for headless mode of execution
+		WebDriver driver = new ChromeDriver(options);
+
+
+2) SSL Handling:
+
+ChromeOptions options = new ChromeOptions();
+		options.setAcceptInsecureCerts(true); // accepts SSL certificates
+		WebDriver driver = new ChromeDriver(options);
+
+3) Remove "Chrome" is controlled by automated test software:
+
+ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
+		
+		WebDriver driver = new ChromeDriver(options);
+		
+
 ## Java
 # Collection Framework
 
