@@ -220,6 +220,10 @@ ChromeOptions options = new ChromeOptions();
 		
 		WebDriver driver = new ChromeDriver(options);
 		
+4) To run test in incognito mode
+
+ChromeOptions options = new ChromeOptions();
+		options.addArguments("--incognito");
 
 ## Java
 # Collection Framework
