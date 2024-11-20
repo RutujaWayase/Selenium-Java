@@ -277,7 +277,7 @@ SortedSet<data-type> set = new TreeSet();
 
 • TreeSet: TreeSet class implements the Set interface that uses tree for storage. Similar to HashSet, TreeSet contains unique elements. Access & retrieval time of TreeSet is quite fast. Elements are stored in ascending oreder.
 
-
+Diamond Problem in Java: 
 
 
 
