@@ -9,7 +9,7 @@ public class PalindromeString {
     */  
         String str = "Rutuja Wayase";
         //String str = sc.next();
-       String org_str = str;
+        String org_str = str;
         String rev = "";
 
         int len = str.length();
