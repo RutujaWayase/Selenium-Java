@@ -18,7 +18,7 @@ public class Navigation {
 		driver.get("https://www.snapdeal.com/");
 		//driver.get("https://www.amazon.in/");
 		
-		driver.navigate().to("https://www.amazon.in/");
+		driver.navigate().to("https://www.amazon.in/ ");
 		
 		driver.navigate().back();  //snapdeal
 		driver.navigate().forward(); //amazon
