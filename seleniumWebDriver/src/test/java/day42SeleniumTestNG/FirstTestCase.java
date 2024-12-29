@@ -1,5 +1,6 @@
 package day42SeleniumTestNG;
 
+import org.testng.annotations.Test;
 
 /*
 1) Open app
@@ -9,6 +10,7 @@ package day42SeleniumTestNG;
 
 public class FirstTestCase {
 	
+	@Test
 	void openapp() {
 		System.out.println("Opening application....");
 		
