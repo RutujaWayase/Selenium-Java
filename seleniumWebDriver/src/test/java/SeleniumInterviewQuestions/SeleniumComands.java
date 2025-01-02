@@ -46,6 +46,9 @@ public class SeleniumComands {
         WebElement checkbox = driver.findElement(By.id("agreeTerms"));
         boolean isSelected = checkbox.isSelected();
         System.err.println("Is Selected: "+isSelected);
+        //Selecting a Dropdown Value
+       // Select dropdown = new Select(driver.findElement(By.id("country")));
+        
 
 
     }
